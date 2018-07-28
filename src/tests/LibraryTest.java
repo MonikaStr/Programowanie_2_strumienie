@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.DoubleConsumer;
 
 import static org.junit.Assert.*;
 
@@ -42,6 +43,10 @@ public class LibraryTest {
         String[] result = {"W pustyni i w puszczy", "Quovadis", "Nad Niemnem", "Wiedźmin: krew elfów", "Wiedźmik: miecz przeznaczenia", "Jakub Wędrowycz", "Kosmos"};
         Assert.assertArrayEquals(result, lib.returnListOfTitles().toArray());
     }
-
+    @Test
+    public void returnListOfPrices() {
+        Double[] result = {27.0, 35.0, 25.0, 31.0, 22.0, 36.0, 26.0};
+        Assert.assertArrayEquals(result, lib.returnListOfPrices().toArray());
+    }
 
 }

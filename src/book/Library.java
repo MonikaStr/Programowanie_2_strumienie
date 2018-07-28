@@ -24,6 +24,12 @@ public class Library {
                 .collect(Collectors.toList());
     }
 
+    public List<Double> returnListOfPrices() {
+        return listOfBooks.stream()
+                .map(x -> x.getPrice())
+                .collect(Collectors.toList());
+    }
+
 
 
 }
