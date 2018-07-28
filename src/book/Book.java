@@ -28,4 +28,14 @@ public class Book {
     public int getReleaseDate() {
         return releaseDate;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                ", price=" + price +
+                ", releaseDate=" + releaseDate +
+                '}';
+    }
 }
