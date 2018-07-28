@@ -34,6 +34,7 @@ public class LibraryTest {
 
     @Test
     public void returnListOfAuthors() {
+        //List<String> result = Arrays.asList("a1"...);
         String[] result = {"Henryk Sienkiewicz", "Henryk Sienkiewicz", "Eliza Orzeszkowa", "Andrzej Sapkowski", "Andrzej Sapkowski", "Andrzej Pilipiuk", "Stanisław Lem"};
         Assert.assertArrayEquals(result, lib.returnListOfAuthors().toArray());
     }

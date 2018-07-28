@@ -42,6 +42,19 @@ public class Library {
                 .collect(Collectors.toList());
     }
 
+    public double getPriceSum() {
+        return listOfBooks.stream()
+                .map(book -> book.getPrice())
+                .reduce(0.0, (e1, e2) -> e1 + e2);
+    }
+    public double getPriceSum2() {
+        return listOfBooks.stream()
+                .mapToDouble(book -> book.getPrice())
+                .sum();
+    }
+
+
+
 
 
 }
