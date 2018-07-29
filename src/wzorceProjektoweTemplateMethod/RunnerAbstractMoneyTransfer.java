@@ -7,8 +7,8 @@ public class RunnerAbstractMoneyTransfer {
         BzwbkMoneyTransfer bz = new BzwbkMoneyTransfer();
         PkoMoneyTransfer pko = new PkoMoneyTransfer();
 
-        bz.performTransfer();
-        pko.performTransfer();
+        bz.performTransfer(new ChristmasDiscount());
+        pko.performTransfer(new ChristmasDiscount());
 
     }
 }

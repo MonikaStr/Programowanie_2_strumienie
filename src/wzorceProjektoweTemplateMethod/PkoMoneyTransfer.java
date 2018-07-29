@@ -11,7 +11,7 @@ public class PkoMoneyTransfer extends AbstractMoneyTransfer {
 
     @Override
     public String addCommisstion() {
-        String result = "Addit 8% of commission";
+        String result = "Additional 8% of commission";
         System.out.println(result);
         return result;
     }

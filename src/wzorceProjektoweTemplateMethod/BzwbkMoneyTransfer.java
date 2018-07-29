@@ -11,7 +11,7 @@ public class BzwbkMoneyTransfer extends AbstractMoneyTransfer {
 
     @Override
     public String addCommisstion() {
-        String result = "Addit 10% of commission";
+        String result = "Additinal 10% of commission";
         System.out.println(result);
         return result;
     }
